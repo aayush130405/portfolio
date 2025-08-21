@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <span className="text-muted-foreground ml-2">whoami</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 terminal-text font-mono">
-                John.Doe
+                Aayush.Yadav
               </h1>
               <div className="font-mono text-sm mb-4">
                 <span className="text-primary">$</span>

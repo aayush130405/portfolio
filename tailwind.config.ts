@@ -61,7 +61,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				terminal: {
+					green: 'hsl(var(--terminal-green))',
+					cyan: 'hsl(var(--terminal-cyan))',
+					magenta: 'hsl(var(--terminal-magenta))'
 				}
+			},
+			fontFamily: {
+				'mono': ['Fira Code', 'JetBrains Mono', 'Courier New', 'monospace'],
+				'code': ['JetBrains Mono', 'Fira Code', 'monospace'],
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-neon': 'var(--gradient-neon)',
+			},
+			boxShadow: {
+				'glow': 'var(--shadow-glow)',
+				'neon': 'var(--shadow-neon)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

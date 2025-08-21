@@ -6,63 +6,88 @@ import { useState } from "react";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovation Corp",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
-    description: "Led development of scalable web applications using React, Node.js, and cloud technologies. Managed a team of 5 developers and improved application performance by 40%. Implemented CI/CD pipelines and mentored junior developers.",
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "Docker"],
+    title: "ServiceNow Developer Intern",
+    company: "Copain Technologies",
+    location: "Gurugram, HR, India (Hybrid)",
+    period: "Jun 2025 - Aug 2025",
+    description: "During my internship at Copains Pvt. Ltd., I worked on developing and integrating backend solutions with ServiceNow to streamline enterprise workflows. My role primarily involved API development using Node.js and Express, followed by integration with ServiceNow modules for efficient process automation. I also gained hands-on experience in cloud-native concepts, including Docker and microservices, while ensuring quality through testing and debugging. This internship not only enhanced my technical expertise in backend and enterprise platforms but also strengthened my ability to work in a professional development environment.",
+    technologies: ["Express.js", "Node.js", "TypeScript", "ServiceNow", "Docker", "Git", "Postman"],
     achievements: [
-      "Increased system performance by 40%",
-      "Led team of 5 developers",
-      "Implemented microservices architecture",
-      "Reduced deployment time by 60%"
+      "Developed and deployed RESTful APIs",
+      "Streamlined ServiceNow workflows",
+      "Explored and applied cloud-native practices",
+      "Enhanced system reliability",
+      "Collaborated with cross-functional teams"
     ],
     skills: {
-      "Frontend": 95,
-      "Backend": 90,
+      "Frontend": 88,
+      "Backend": 95,
       "DevOps": 85,
       "Leadership": 88
     }
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Solutions LLC",
-    location: "Remote",
-    period: "2020 - 2022",
-    description: "Developed responsive web applications and collaborated with design teams to create intuitive user interfaces. Implemented modern frontend frameworks and best practices. Built component libraries and design systems.",
-    technologies: ["React", "Vue.js", "JavaScript", "Tailwind CSS", "Figma", "Storybook"],
+    title: "Full Stack Developer Intern",
+    company: "WorrisGo",
+    location: "Gurugram, HR, India (Remote)",
+    period: "Nov 2024 - Dec 2024",
+    description: "Contributed to end-to-end web application development, working on both frontend (React) and backend (Node.js, Express, MongoDB). Built scalable APIs, optimized database queries, and integrated modern UI/UX practices to deliver smooth and responsive user experiences. Collaborated with the team to ensure performance, security, and maintainability across the product lifecycle.",
+    technologies: ["Express.js", "Node.js", "JavaScript", "MongoDB", "React", "Postman", "Git"],
     achievements: [
-      "Built reusable component library",
+      "Designed and implemented RESTful APIs",
       "Improved page load speed by 50%",
       "Designed comprehensive design system",
-      "Mentored 3 junior developers"
+      "Optimized database queries and backend logic"
     ],
     skills: {
-      "React": 92,
-      "Vue.js": 85,
-      "CSS": 88,
-      "Design": 75
+      "Express.js": 85,
+      "Node.js": 95,
+      "MongoDB": 88,
+      "React": 85,
+      "Git": 90,
+      "Postman": 85,
     }
   },
   {
-    title: "Junior Web Developer",
-    company: "StartUp Ventures",
-    location: "New York, NY",
-    period: "2019 - 2020",
-    description: "Built and maintained company websites and web applications. Gained experience in full-stack development and agile methodologies. Contributed to multiple client projects and learned modern development practices.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress"],
+    title: "Project Collaboration Lead",
+    company: "The Victors Club",
+    location: "Gurugram, HR, India (On-Site)",
+    period: "Sep 2024 - Nov 2024",
+    description: "Led collaboration initiatives within the college club, focusing on project coordination and web development. Actively contributed to building the club’s online presence by developing and maintaining its official website. Worked closely with team members to streamline workflows, encourage participation, and deliver impactful digital solutions for the club.",
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "Node.js", "MongoDB", "Git"],
     achievements: [
-      "Delivered 15+ client projects",
+      "Spearheaded the development of the club’s official website",
       "Learned full-stack development",
-      "Improved code quality standards",
-      "Adopted agile methodologies"
+      "Coordinated cross-team projects",
+      "Introduced structured workflows for project planning and tracking",
+      "Facilitated communication and collaboration tools"
     ],
     skills: {
-      "JavaScript": 70,
-      "PHP": 65,
-      "MySQL": 60,
-      "WordPress": 80
+      "JavaScript": 80,
+      "Tailwind CSS": 85,
+      "MongoDB": 80,
+      "Git": 90,
+      "Node.js": 85,
+    }
+  },
+  {
+    title: "Web Developer Volunteer",
+    company: "Google Developer Student Clubs (GDSC)",
+    location: "Gurugram, HR, India (On-Site)",
+    period: "Jan 2024 - July 2024",
+    description: "Contributed as a Web Developer Volunteer at GDSC, where I actively engaged in building digital solutions for community events and initiatives. During this experience, I strengthened my technical skills in React, JavaScript, and CSS while also gaining valuable exposure to teamwork and leadership through collaboration with peers on impactful projects.",
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "React", "Git"],
+    achievements: [
+      "Designed and developed the official hackathon website for the club",
+      "Enhanced front-end skills in React, JavaScript, and CSS",
+      "Collaborated effectively in a team-based environment",
+      "Took on leadership responsibilities within project tasks"
+    ],
+    skills: {
+      "JavaScript": 80,
+      "Tailwind CSS": 85,
+      "Git": 90,
+      "React": 85,
     }
   }
 ];
@@ -75,7 +100,7 @@ const ExperienceSection = () => {
   };
 
   return (
-    <section className="py-20 px-6 matrix-bg">
+    <section id="experience" className="py-20 px-6 matrix-bg cyber-grid scroll-mt-24">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold terminal-text font-mono mb-4">

@@ -4,6 +4,10 @@
 
 /* Modern portfolio design system with gradients and glass effects */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 2%;
@@ -50,6 +54,9 @@
     --terminal-cyan: 180 100% 50%;
     --terminal-magenta: 300 100% 50%;
     --neon-glow: 120 100% 50%;
+    --matrix-a: 120 100% 50%;
+    --matrix-b: 180 100% 50%;
+    --matrix-c: 300 100% 50%;
     
     /* Glass effects */
     --glass-bg: hsl(120 30% 10% / 0.8);
@@ -120,6 +127,219 @@
   }
 }
 
+/* Theme variants */
+@layer base {
+  .theme-light {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 224.3 76.3% 48%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 224.3 76.3% 65%;
+
+    --secondary: 215 16.3% 46.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 20.2% 34.1%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 224.3 76.3% 48%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 50%, hsl(0 0% 100%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(210 40% 96% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(224.3 76.3% 48% / 0.4), hsl(210 40% 96% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(224.3 76.3% 48%), hsl(210 40% 50%), hsl(262 83% 58%));
+
+    --glass-bg: hsl(0 0% 100% / 0.7);
+    --glass-border: hsl(224.3 76.3% 48% / 0.2);
+    --shadow-glow: 0 0 40px hsl(224.3 76.3% 48% / 0.2);
+    --shadow-neon: 0 0 60px hsl(224.3 76.3% 48% / 0.3);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.08);
+    --matrix-a: 217.2 91.2% 59.8%;
+    --matrix-b: 199 89% 48%;
+    --matrix-c: 262 83% 58%;
+  }
+
+  .theme-blue {
+    --background: 216 100% 97%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --card: 210 100% 99%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --popover: 210 100% 99%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217.2 91.2% 70%;
+
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 214 95% 93%;
+    --muted-foreground: 215 20.2% 34.1%;
+
+    --accent: 199 93% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 210 40% 90%;
+    --input: 210 40% 90%;
+    --ring: 217.2 91.2% 59.8%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(216 100% 97%) 0%, hsl(210 100% 99%) 50%, hsl(214 95% 93%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(210 100% 99% / 0.9), hsl(214 95% 93% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(217.2 91.2% 59.8% / 0.4), hsl(199 89% 48% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(217.2 91.2% 59.8%), hsl(199 93% 48%), hsl(199 89% 48%));
+
+    --glass-bg: hsl(210 100% 99% / 0.7);
+    --glass-border: hsl(217.2 91.2% 59.8% / 0.2);
+    --shadow-glow: 0 0 40px hsl(217.2 91.2% 59.8% / 0.2);
+    --shadow-neon: 0 0 60px hsl(217.2 91.2% 59.8% / 0.3);
+    --shadow-card: 0 8px 32px hsl(210 40% 40% / 0.08);
+    --matrix-a: 217.2 91.2% 59.8%;
+    --matrix-b: 199 93% 48%;
+    --matrix-c: 199 89% 48%;
+  }
+
+  .theme-rose {
+    --background: 330 100% 98%;
+    --foreground: 340 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 30% 15%;
+
+    --primary: 340 82% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 340 82% 65%;
+
+    --secondary: 10 82% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 330 40% 95%;
+    --muted-foreground: 340 20% 30%;
+
+    --accent: 320 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 330 35% 90%;
+    --input: 330 35% 90%;
+    --ring: 340 82% 52%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(330 100% 98%) 0%, hsl(0 0% 100%) 50%, hsl(330 40% 95%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(330 40% 95% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(340 82% 52% / 0.4), hsl(320 90% 60% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(340 82% 52%), hsl(320 90% 60%), hsl(10 82% 60%));
+
+    --glass-bg: hsl(0 0% 100% / 0.7);
+    --glass-border: hsl(340 82% 52% / 0.2);
+    --shadow-glow: 0 0 40px hsl(340 82% 52% / 0.2);
+    --shadow-neon: 0 0 60px hsl(340 82% 52% / 0.3);
+    --shadow-card: 0 8px 32px hsl(340 30% 30% / 0.08);
+    --matrix-a: 340 82% 52%;
+    --matrix-b: 320 90% 60%;
+    --matrix-c: 10 82% 60%;
+  }
+
+  .theme-violet {
+    --background: 262 100% 98%;
+    --foreground: 262 50% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 262 50% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 262 50% 20%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 83% 70%;
+
+    --secondary: 280 80% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 262 40% 95%;
+    --muted-foreground: 262 20% 30%;
+
+    --accent: 292 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 262 35% 90%;
+    --input: 262 35% 90%;
+    --ring: 262 83% 58%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(262 100% 98%) 0%, hsl(0 0% 100%) 50%, hsl(262 40% 95%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(262 40% 95% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(262 83% 58% / 0.4), hsl(292 90% 60% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(262 83% 58%), hsl(292 90% 60%), hsl(280 80% 60%));
+
+    --glass-bg: hsl(0 0% 100% / 0.7);
+    --glass-border: hsl(262 83% 58% / 0.2);
+    --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.2);
+    --shadow-neon: 0 0 60px hsl(262 83% 58% / 0.3);
+    --shadow-card: 0 8px 32px hsl(262 30% 30% / 0.08);
+    --matrix-a: 262 83% 58%;
+    --matrix-b: 292 90% 60%;
+    --matrix-c: 280 80% 60%;
+  }
+
+  .theme-emerald {
+    --background: 152 80% 97%;
+    --foreground: 155 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 155 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 155 30% 15%;
+
+    --primary: 152 76% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 152 76% 55%;
+
+    --secondary: 174 80% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 40% 94%;
+    --muted-foreground: 155 20% 30%;
+
+    --accent: 166 72% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 150 35% 88%;
+    --input: 150 35% 88%;
+    --ring: 152 76% 40%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(152 80% 97%) 0%, hsl(0 0% 100%) 50%, hsl(150 40% 94%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(150 40% 94% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(152 76% 40% / 0.4), hsl(174 80% 45% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(152 76% 40%), hsl(174 80% 45%), hsl(166 72% 45%));
+
+    --glass-bg: hsl(0 0% 100% / 0.7);
+    --glass-border: hsl(152 76% 40% / 0.2);
+    --shadow-glow: 0 0 40px hsl(152 76% 40% / 0.2);
+    --shadow-neon: 0 0 60px hsl(152 76% 40% / 0.3);
+    --shadow-card: 0 8px 32px hsl(152 30% 30% / 0.08);
+    --matrix-a: 152 76% 40%;
+    --matrix-b: 174 80% 45%;
+    --matrix-c: 166 72% 45%;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -153,9 +373,9 @@
   
   .matrix-bg {
     background: 
-      radial-gradient(circle at 20% 50%, hsl(120 100% 50% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(180 100% 50% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, hsl(300 100% 50% / 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(var(--matrix-a) / 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--matrix-b) / 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--matrix-c) / 0.12) 0%, transparent 50%);
   }
   
   .cyber-grid {
@@ -197,12 +417,12 @@
   }
   
   .code-block {
-    background: hsl(0 0% 0% / 0.8);
+    background: hsl(var(--card) / 0.8);
     border: 1px solid hsl(var(--primary) / 0.3);
     border-radius: 0.5rem;
     padding: 1rem;
     font-family: 'Fira Code', monospace;
-    color: hsl(var(--primary));
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.2);
+    color: hsl(var(--foreground));
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.15);
   }
 }

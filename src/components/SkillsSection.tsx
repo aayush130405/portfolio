@@ -64,11 +64,11 @@ const SkillsSection = () => {
 
           <div className="glass-card neon-border p-8 animate-fade-in hover:neon-glow smooth-transition" style={{ animationDelay: '0.1s' }}>
             <h3 className="font-mono text-terminal-cyan mb-6">// Tools & Technologies</h3>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="flex flex-wrap gap-2">
               {tools.map((t) => (
                 <Badge
                   key={t}
-                  className="bg-primary/20 text-primary border border-primary/30 font-mono text-xs hover:bg-primary/30 smooth-transition text-center justify-center"
+                  className="bg-primary/20 text-primary border border-primary/30 font-mono text-xs hover:bg-primary/30 smooth-transition whitespace-nowrap px-3 py-1"
                 >
                   {t}
                 </Badge>

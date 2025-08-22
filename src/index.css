@@ -338,6 +338,90 @@ html {
     --matrix-b: 174 80% 45%;
     --matrix-c: 166 72% 45%;
   }
+
+  .theme-coffee {
+    --background: 25 25% 96%;
+    --foreground: 25 40% 15%;
+
+    --card: 30 20% 98%;
+    --card-foreground: 25 40% 15%;
+
+    --popover: 30 20% 98%;
+    --popover-foreground: 25 40% 15%;
+
+    --primary: 25 75% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 25 75% 60%;
+
+    --secondary: 35 65% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 15% 92%;
+    --muted-foreground: 25 25% 35%;
+
+    --accent: 15 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 25 75% 45%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(25 25% 96%) 0%, hsl(30 20% 98%) 50%, hsl(30 15% 92%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(30 20% 98% / 0.9), hsl(30 15% 92% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(25 75% 45% / 0.4), hsl(35 65% 50% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(25 75% 45%), hsl(35 65% 50%), hsl(15 85% 55%));
+
+    --glass-bg: hsl(30 20% 98% / 0.7);
+    --glass-border: hsl(25 75% 45% / 0.2);
+    --shadow-glow: 0 0 40px hsl(25 75% 45% / 0.2);
+    --shadow-neon: 0 0 60px hsl(25 75% 45% / 0.3);
+    --shadow-card: 0 8px 32px hsl(25 30% 30% / 0.08);
+    --matrix-a: 25 75% 45%;
+    --matrix-b: 35 65% 50%;
+    --matrix-c: 15 85% 55%;
+  }
+
+  .theme-midnight {
+    --background: 220 30% 5%;
+    --foreground: 220 50% 95%;
+
+    --card: 220 40% 8%;
+    --card-foreground: 220 50% 95%;
+
+    --popover: 220 40% 8%;
+    --popover-foreground: 220 50% 95%;
+
+    --primary: 230 85% 65%;
+    --primary-foreground: 220 30% 5%;
+    --primary-glow: 230 85% 75%;
+
+    --secondary: 250 70% 60%;
+    --secondary-foreground: 220 30% 5%;
+
+    --muted: 220 30% 15%;
+    --muted-foreground: 220 30% 70%;
+
+    --accent: 280 90% 70%;
+    --accent-foreground: 220 30% 5%;
+
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
+    --ring: 230 85% 65%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(220 30% 5%) 0%, hsl(220 40% 8%) 50%, hsl(220 30% 10%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220 40% 8% / 0.9), hsl(220 30% 12% / 0.7));
+    --gradient-border: linear-gradient(135deg, hsl(230 85% 65% / 0.4), hsl(250 70% 60% / 0.3));
+    --gradient-neon: linear-gradient(90deg, hsl(230 85% 65%), hsl(250 70% 60%), hsl(280 90% 70%));
+
+    --glass-bg: hsl(220 40% 8% / 0.8);
+    --glass-border: hsl(230 85% 65% / 0.2);
+    --shadow-glow: 0 0 40px hsl(230 85% 65% / 0.4);
+    --shadow-neon: 0 0 60px hsl(230 85% 65% / 0.6);
+    --shadow-card: 0 8px 32px hsl(220 30% 0% / 0.7);
+    --matrix-a: 230 85% 65%;
+    --matrix-b: 250 70% 60%;
+    --matrix-c: 280 90% 70%;
+  }
 }
 
 @layer base {

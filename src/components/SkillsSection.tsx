@@ -2,35 +2,43 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 
 const coreSkills: Array<{ name: string; level: number }> = [
-  { name: "Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "VPS", level: 92 },
-  { name: "Node.js", level: 88 },
-  { name: "Databases", level: 85 },
-  { name: "Git", level: 80 },
+  { name: "Frontend", level: 80 },
+  { name: "Backend", level: 95 },
+  { name: "Debugging", level: 90 },
+  { name: "Databases", level: 90 },
+  { name: "DevOps", level: 85 },
 ];
 
 const tools: string[] = [
-  "Git",
+  "Next.js",
   "TypeScript",
   "Node.js",
+  "Express.js",
+  "React",
   "Vercel",
-  "Next.js",
   "Prisma",
   "NeonDB",
   "MongoDB",
+  "Postgres",
   "Mongoose",
   "Tailwind CSS",
   "Vite",
   "NPM",
+  "Bun",
   "Nginx",
   "VPS",
+  "Git",
+  "GitHub Actions",
+  "Docker",
   "Cloudinary AI",
   "OpenAI",
   "Postman",
   "REST APIs",
   "Shadcn UI",
-  "DaisyUI",
+  "Daisy UI",
+  "Bootstrap",
+  "Fastify", 
+  "JWT"
 ];
 
 const SkillsSection = () => {

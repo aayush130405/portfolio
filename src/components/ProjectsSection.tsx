@@ -6,77 +6,59 @@ import { ExternalLink, Github, Eye, Star, GitFork } from "lucide-react";
 
 const projects = [
   {
-    title: "CyberCommerce",
-    subtitle: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with modern design and seamless user experience. Features include product catalog, shopping cart, payment integration, and admin dashboard.",
-    longDescription: "Built with microservices architecture, this platform handles thousands of concurrent users with real-time inventory management and AI-powered recommendations.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redis", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#",
-    stats: { stars: 247, forks: 89, watchers: 45 },
+    title: "Rezio",
+    subtitle: "Context-aware image crops and high‑fidelity video compression, deployed at scale",
+    description: 'Rezio is a browser-based media optimization SaaS built with Next.js, Prisma + Neon DB, and Cloudinary. It offers AI-powered cropping and compression, eliminating the need for desktop software. Think "media processing API with a beautiful UI" - upload once, optimize instantly, no installs required.',
+    longDescription: "This app is a Next.js 14 App Router application with TypeScript, Prisma ORM + Neon PostgreSQL, and Cloudinary media processing. Features include AI-powered context-aware cropping, intelligent compression algorithms, and a modern Tailwind CSS UI. Built with serverless architecture on Vercel and robust authentication using clerk, it handles media uploads via API routes and provides instant optimization without client-side processing.",
+    technologies: ["Next.js 14", "Node.js", "TypeScript", "Prisma ORM", "Neon PostgreSQL", "Cloudinary", "Vercel", "Daisy UI", "Tailwind CSS", "Clerk", "Git", "GitHub"],
+    liveUrl: "https://rezioai.vercel.app",
+    githubUrl: "https://github.com/aayush130405/rezio-saas",
+    stats: { stars: 1, forks: 0, watchers: 45 },
     progress: {
-      "Frontend": 100,
-      "Backend": 95,
-      "Testing": 80,
+      "Frontend": 85,
+      "Backend": 100,
+      "Testing": 95,
       "Deployment": 90
     },
     status: "Production",
-    year: "2023"
+    year: "2025"
   },
   {
-    title: "TaskMaster AI",
-    subtitle: "Task Management App",
-    description: "Collaborative task management application with real-time updates, team collaboration features, and AI-powered task prioritization.",
-    longDescription: "Features intelligent task scheduling, automated progress tracking, and team performance analytics with machine learning insights.",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS", "OpenAI", "WebSocket"],
+    title: "vidTube",
+    subtitle: "The complete video platform for creators",
+    description: "vidTube is a Express.js based video streaming platform that empowers creators with channel management, analytics, and social features. Built with MongoDB, Node.js, Express.js it provides video uploads, user subscriptions, likes, comments, and comprehensive dashboard insights for tracking views, subscribers, and engagement metrics - essentially a full-stack YouTube alternative for content creators.",
+    longDescription: "This app is a RESTful Node.js API built with Express.js and MongoDB, featuring JWT authentication, Multer for file uploads, and Cloudinary integration for video storage. The architecture follows MVC pattern with dedicated controllers for video management, user operations, social interactions (likes, subscriptions, comments), and analytics. Built with async/await patterns, custom error handling middleware, and modular routing structure for scalable video streaming platform development",
+    technologies: ["Node.js", "Express.js", "Tailwind CSS", "MongoDB", "Mongoose", "JWT", "Multer", "Cloudinary", "Postman", "Git", "GitHub"],
     liveUrl: "#",
-    githubUrl: "#",
-    stats: { stars: 156, forks: 34, watchers: 28 },
+    githubUrl: "https://github.com/aayush130405/vidTube",
+    stats: { stars: 0, forks: 0, watchers: 28 },
     progress: {
-      "Frontend": 95,
-      "Backend": 90,
+      "Backend": 95,
       "AI Integration": 75,
-      "Testing": 70
-    },
-    status: "Beta",
-    year: "2024"
-  },
-  {
-    title: "WeatherNet",
-    subtitle: "Weather Analytics",
-    description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics for multiple cities.",
-    longDescription: "Integrates multiple weather APIs with machine learning for improved forecast accuracy and personalized weather insights.",
-    technologies: ["React", "OpenWeather API", "Chart.js", "Mapbox", "Python"],
-    liveUrl: "#",
-    githubUrl: "#",
-    stats: { stars: 89, forks: 23, watchers: 16 },
-    progress: {
-      "Frontend": 100,
-      "API Integration": 95,
-      "Data Visualization": 85,
-      "Mobile": 60
-    },
-    status: "Stable",
-    year: "2023"
-  },
-  {
-    title: "DevPortfolio",
-    subtitle: "Portfolio Framework",
-    description: "Modern portfolio framework with cyber aesthetics, showcasing projects and skills with smooth animations and responsive design.",
-    longDescription: "Built as a template for developers, featuring terminal-inspired UI, glassmorphism effects, and modular component architecture.",
-    technologies: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-    stats: { stars: 312, forks: 78, watchers: 52 },
-    progress: {
-      "Design": 100,
-      "Components": 95,
-      "Documentation": 70,
-      "Templates": 60
+      "Testing": 90,
+      "Architecture": 95
     },
     status: "Active",
-    year: "2024"
-  }
+    year: "2025"
+  },
+  {
+    title: "NextJS Auth",
+    subtitle: "Secure, scalable Full Stack authentication system built with Next.js, MongoDB, and TypeScript",
+    description: "Auth-NextJS is a complete authentication solution built with Next.js, MongoDB, and TypeScript. It provides secure user management with encrypted passwords, email verification, and a robust forgot/reset password system—fully deployed on Vercel and perfect for developers who want production-ready auth without building it from scratch.",
+    longDescription: "Auth-NextJS is a full-stack authentication system built with Next.js 13+ (App Router), MongoDB with Mongoose ODM, and TypeScript. The backend implements secure user authentication using bcryptjs for password hashing and JWT tokens for session management, while the email system leverages Mailtrap for transactional emails including verification links and password reset tokens with configurable expiry times. The frontend features React components with TypeScript interfaces and responsive UI built with Tailwind CSS, all deployed on Vercel with proper environment variable management for production security.",
+    technologies: ["Next.js 13+", "React 18", "TypeScript", "Tailwind CSS", "MongoDB", "Mongoose", "bcryptjs", "JWT", "Mailtrap", "Vercel", "Git", "GitHub"],
+    liveUrl: "https://nextjs-auth-self-two.vercel.app",
+    githubUrl: "https://github.com/aayush130405/nextjs-auth",
+    stats: { stars: 0, forks: 0, watchers: 16 },
+    progress: {
+      "Frontend": 100,
+      "Backend": 95,
+      "Testing": 75,
+      "Deployment": 95
+    },
+    status: "Production",
+    year: "2025"
+  },
 ];
 
 const ProjectsSection = () => {
@@ -180,7 +162,14 @@ const ProjectsSection = () => {
                     <div className="flex gap-3">
                       <Button 
                         size="sm"
-                        className="flex-1 font-mono text-xs smooth-transition hover:scale-105"
+                        className={`flex-1 font-mono text-xs smooth-transition ${
+                          project.liveUrl && project.liveUrl !== "#" 
+                            ? "hover:scale-105" 
+                            : "opacity-50 cursor-not-allowed"
+                        }`}
+                        onClick={() => project.liveUrl && project.liveUrl !== "#" ? window.open(project.liveUrl, '_blank') : null}
+                        disabled={!project.liveUrl || project.liveUrl === "#"}
+                        title={project.liveUrl && project.liveUrl !== "#" ? "Open Live Demo" : "Live Demo Not Available"}
                       >
                         <ExternalLink className="h-3 w-3 mr-2" />
                         ./deploy
@@ -189,6 +178,8 @@ const ProjectsSection = () => {
                         variant="outline" 
                         size="sm"
                         className="flex-1 glass-card neon-border font-mono text-xs smooth-transition hover:scale-105"
+                        onClick={() => project.githubUrl ? window.open(project.githubUrl, '_blank') : null}
+                        title="View Source Code on GitHub"
                       >
                         <Github className="h-3 w-3 mr-2" />
                         ./source
@@ -210,7 +201,7 @@ const ProjectsSection = () => {
                   </p>
                   <div className="mt-3 pt-3 border-t border-primary/20">
                     <div className="text-xs text-muted-foreground">
-                      <span className="text-primary">Repository:</span> github.com/johndoe/{project.title.toLowerCase()}
+                      <span className="text-primary">Repository:</span> github.com/aayush130405/{project.title.toLowerCase()}
                     </div>
                   </div>
                 </div>
